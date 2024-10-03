@@ -7,29 +7,89 @@
 
 using namespace std;
 
-int main ()
-
+int main()
 {
-    int month;
-    int day;
-    char month, day;
 
-    cout << "Enter the month and day in the following format. (month), space, (day). ex. input Jan. 1 as \"1 1";
+	int month;
+	int day;
+	char space;
 
-    if (month >= 3 && month <= 6 && day <= 21) //if month is greater than or equal to 3, and less than or equal to 5. all days will print spring 
-        if( !month == 6 && day > 20 ) //if month is 6 and day is more than 20 it prints summer 
-        cout << Summer;
-        else 
-        cout << "It is Spring!";
+	cout << "Enter the month and day in the following format. ex. January 1 would be 1 1" << endl;
+    cin >> month;
+    cin.get(space);
+    cin >> day;
 
-     /*two integer inputs from the user, month and day, and prints 
-     the season corresponding to the month (1 = January, 12 = December) and day in the northern hemisphere. Use the following table for the seasons:
-For example, if the user enters 3 22 your program will print: It is now Spring!
 
-Spring March 21 June 20
-Summer June 21 September 22
-Fall September 23 December 21
-Winter December 22 March 20
-*/
+	//If user inputs 1 as month, it will print January (day) & "It is Winter!"
+    	if (month == 1)
+		    cout << "January " << day << "\nIt is Winter!";
+		
+		
+    //If user inputs 2 as month, it will print February (day) & "It is Winter!"
+    	if (month == 2)
+	    	cout << "February " << day << "\nIt is Winter!";
 
+
+    //If user inputs 3 as month & day is less than or equal to 20, it will print March (day) & "It is Winter!"
+	    if (month == 3 && day <= 20)
+	    	cout << "March " << day << "\nIt is Winter!";
+	//If not (day is greater than 20), then it will print "It is Spring!"
+		else if (month == 3 && day > 20)
+		cout << "March " << day << "\nIt is Spring!";
+
+
+    //If user inputs 4 as month, it will print April (day) & "It is Spring!"
+	    if (month == 4)
+		    cout << "April " << day << "\nIt is Spring!";
+		    
+		    
+    //If user inputs 5 as month, it will print May (day) & "It is Spring!"
+    	if (month == 5)
+	    	cout << "May " << day << "\nIt is Spring!";
+
+
+    //If user inputs 6 as month & day is less than or equal to 20, it will print June (day) & "It is Summer!"
+	    if (month == 6 && day <= 20)
+		    cout << "June " << day << "\nIt is Spring!";
+    //If not (day is greater than 20), then it will print "It is Summer!"
+        else if (month == 6 && day > 20) 
+            cout << "June " << day << "\nIt is Summer!";
+            
+            
+    //If user inputs 7 as month, it will print July (day) & "It is Summer!"    
+	    if (month == 7)
+		    cout << "July " << day << "\nIt is Summer!";
+		    
+		    
+    //If user inputs 8 as month, it will print August (day) & "It is Summer!"  
+	    if (month == 8)
+		    cout << "August " << day << "\nIt is Summer!";
+		    
+		    
+    //If user inputs 9 as month & day is less than or equal to 22, it will print July (day) & "It is Summer!"  
+	    if (month == 9 && day <= 22)
+		    cout << "September " << day << "\nIt is Spring";
+    //If not (day is greater than 22), then it will print September (day) & "It is Fall!"
+        else if (month == 9 && day > 22)
+            cout << "September " << day << "\nIt is Fall!";
+            
+            
+    //If user inputs 10 as month, it will print August (day) & "It is Fall!"       
+	    if (month == 10)
+		    cout << "October " << day << "\nIt is Fall!";
+		    
+		    
+    //If user inputs 11 as month, it will print August (day) & "It is Fall!" 
+	    if (month == 11)
+		    cout << "November " << day << "\nIt is Fall!";
+
+
+    //If user inputs 12 as month & day is less than or equal to 21, it will print December (day) & "It is Fall!"  
+	    if (month == 12 && day <= 21)
+		    cout << "December " << day << "\nIt is Fall!";
+	//If not (day is greater than 21), then it will print December (day) & "It is Winter!"
+		else if (month == 12 && day > 21)
+		    cout << "December " << day << "\nIt is Winter!";
+
+	return 0;
 }
