@@ -3,7 +3,6 @@
 //10-1-24
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -14,10 +13,8 @@ int main()
 	int day;
 	char space;
 
-	cout << "Enter the month and day in the following format. ex. January 1 would be 1 1" << endl;
-    cin >> month;
-    cin.get(space);
-    cin >> day;
+	cout << "Enter the month and day in the following format. Ex. January 1 would be 1 1" << endl;
+    cin >> month >> space >> day;
 
 
 	//If user inputs 1 as month, it will print January (day) & "It is Winter!"
@@ -34,7 +31,7 @@ int main()
 	    if (month == 3 && day <= 20)
 	    	cout << "March " << day << "\nIt is Winter!";
 	//If not (day is greater than 20), then it will print "It is Spring!"
-		else if (month == 3 && day > 20)
+		else
 		cout << "March " << day << "\nIt is Spring!";
 
 
@@ -52,7 +49,7 @@ int main()
 	    if (month == 6 && day <= 20)
 		    cout << "June " << day << "\nIt is Spring!";
     //If not (day is greater than 20), then it will print "It is Summer!"
-        else if (month == 6 && day > 20) 
+        else 
             cout << "June " << day << "\nIt is Summer!";
             
             
@@ -70,7 +67,7 @@ int main()
 	    if (month == 9 && day <= 22)
 		    cout << "September " << day << "\nIt is Spring";
     //If not (day is greater than 22), then it will print September (day) & "It is Fall!"
-        else if (month == 9 && day > 22)
+        else 
             cout << "September " << day << "\nIt is Fall!";
             
             
@@ -88,7 +85,7 @@ int main()
 	    if (month == 12 && day <= 21)
 		    cout << "December " << day << "\nIt is Fall!";
 	//If not (day is greater than 21), then it will print December (day) & "It is Winter!"
-		else if (month == 12 && day > 21)
+		else
 		    cout << "December " << day << "\nIt is Winter!";
 
 	return 0;
