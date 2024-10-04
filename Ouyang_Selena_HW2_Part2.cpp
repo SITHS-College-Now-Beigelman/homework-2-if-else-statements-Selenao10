@@ -105,3 +105,17 @@ int main()
 	
 return 0;
 }
+
+/*
+
+Enter scores from 0.0 to 10.0.
+Score One: 4
+Score Two: 5
+Score Three: 6
+Score Four: 3
+Score Five: 5
+Score Six: 4
+
+Final Score: 5.0
+
+*/
