@@ -19,8 +19,8 @@ int main()
 	float lowestScore; //variable for lowest score
 	float highestScore; //variable for highest score
     
-    cout << fixed << setprecision(1); 
-	cout <<  "Enter scores from 0.0 to 10.0." << endl; //user direction to input scores
+    cout << fixed << setprecision(1); //set point precision to one decimal place
+	cout <<  "Enter scores from 0.0 to 10.0." << endl; //User directions to input scores
 	cout << "Score One: "; 
 	cin >> scoreOne;
 	cout << "Score Two: ";
