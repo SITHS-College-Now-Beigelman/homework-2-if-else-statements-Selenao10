@@ -101,7 +101,7 @@ int main()
 	}
 	
 	//Caculating average without lowest and highest score
-	cout << "Final Score: " << ((scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive + scoreSix) - lowestScore - highestScore)/4;
+	cout << endl << "Final Score: " << ((scoreOne + scoreTwo + scoreThree + scoreFour + scoreFive + scoreSix) - lowestScore - highestScore)/4;
 	
 return 0;
 }
